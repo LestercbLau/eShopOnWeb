@@ -6,7 +6,7 @@ on: workflow_dispatch #on: [push, workflow_dispatch]
 #Environment variables https://docs.github.com/en/actions/learn-github-actions/environment-variables
 env:
   RESOURCE-GROUP: lester-dev
-  LOCATION: southeastasia
+  LOCATION: eastasia
   TEMPLATE-FILE: infra/webapp.bicep
   SUBSCRIPTION-ID: 03373a84-a4d8-45bb-9c61-98fc8f94548b
   WEBAPP-NAME: devops-webapp-southeastasia-2179518678
