@@ -12,7 +12,6 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2022-09-01' = {
   }
   sku: {
     name: sku
-    capacity: 1
   }
 }
 resource appService 'Microsoft.Web/sites@2022-09-01' = {
@@ -22,7 +21,7 @@ resource appService 'Microsoft.Web/sites@2022-09-01' = {
   properties: {
     serverFarmId: appServicePlan.id
     siteConfig: {
-      linuxFxVersion: 'DOTNETCORE|8.0'
+      linuxFxVersion: 'DOTNETCORE|10.0'
       appSettings: [
         {
           name: 'ASPNETCORE_ENVIRONMENT'
